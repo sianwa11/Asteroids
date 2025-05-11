@@ -35,7 +35,7 @@ def main():
    
    
    player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
-   asteroidField = AsteroidField()
+   asteroid_field= AsteroidField()
 
 
    running = True
@@ -58,7 +58,7 @@ def main():
          for shot in shots:
             if shot.collide(asteroid):
                shot.kill()
-               asteroid.kill()
+               asteroid.split()
 
 
 
